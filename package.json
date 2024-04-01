@@ -1,0 +1,17 @@
+{
+  "name": "project-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db": "json-server --watch db.json --port 5050",
+    "dashboard": "npm run dev --prefix taobin-dashboard",
+    "both": "npm run server & npm run taobin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
