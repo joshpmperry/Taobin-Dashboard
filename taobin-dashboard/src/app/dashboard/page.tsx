@@ -1,11 +1,9 @@
-import Navbar from "@/components/composite/navbar";
-import { Dashboard } from "../blocks/dashboardblock";
+import { Dashboard } from "../../components/blocks/dashboardblock";
 
 
 export default function Page() {
   return (
     <>
-      <Navbar/>
       <Dashboard/>
     </>
   );
