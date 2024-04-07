@@ -1,53 +1,23 @@
 import Logo from "../../../public/logo.svg"
 import Image from "next/image";
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Button } from "../ui/button";
+import { Sheet, SheetTrigger } from "../ui/sheet";
+import { Button} from "../ui/button";
 
 import {
-  Activity,
-  ArrowUpRight,
   CircleUser,
-  CreditCard,
-  DollarSign,
   Menu,
-  Package2,
   Search,
-  Users,
 } from "lucide-react"
-
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-
-import { getSession } from "@/lib/actions";
+import { getSession, logout } from "@/lib/actions";
 
 
 
@@ -75,28 +45,9 @@ const Navbar = async () => {
 
           <Link
             href="/status"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-foreground transition-colors hover:text-foreground"
           >
             Status
-          </Link>
-
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Page3
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Page4
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Page5
           </Link>
         </nav>
         <Sheet>
@@ -134,7 +85,11 @@ const Navbar = async () => {
               <DropdownMenuContent align="end">
                 <DropdownMenuLabel>{session.username}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Logout</DropdownMenuItem>
+                <form action={logout}>
+                  <Button  type="submit" variant={"ghost"} className="w-full">
+                    logout
+                  </Button>
+                </form>
               </DropdownMenuContent>
             </DropdownMenu>
                    :

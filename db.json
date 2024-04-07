@@ -1,23 +1,347 @@
 {
-    "post": [
+    "machine": [
         {
-            "id": "1",
-            "title": "Post one",
-            "body": "This is the post body",
-            "time": "1-4-2024"
+            "id": "Taobin-VM1",
+            "location": "loc-2",
+            "uptime": "19",
+            "currentSales": 100,
+            "time": "1-4-2024",
+            "isActive": false,
+            "alerts": {
+                "id": "a-1",
+                "type": "maintenance",
+                "message": "Machine is currently offline"
+              }
         },
         {
-            "id": "2",
-            "title": "Post two",
-            "body": "This is the post body",
-            "time": "1-4-2024"
+            "id": "Taobin-VM2",
+            "location": "loc-1",
+            "uptime": "40",
+            "currentSales": 100,
+            "time": "4-10-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-0",
+                "type": "None",
+                "message": "Machine is currently working fine"
+              }
+        },
+        {
+            "id": "Taobin-VM3",
+            "location": "loc-1",
+            "uptime": "20",
+            "currentSales": 50,
+            "time": "1-4-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-001"
+              }
+        },
+        {
+            "id": "Taobin-VM4",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-9-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM5",
+            "location": "loc-2",
+            "uptime": "19",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": false,
+            "alerts": {
+                "id": "a-1",
+                "type": "maintenance",
+                "message": "Machine is currently offline"
+              }
+        },
+        {
+            "id": "Taobin-VM6",
+            "location": "loc-1",
+            "uptime": "40",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-0",
+                "type": "None",
+                "message": "Machine is currently working fine"
+              }
+        },
+        {
+            "id": "Taobin-VM7",
+            "location": "loc-1",
+            "uptime": "20",
+            "currentSales": 50,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-001"
+              }
+        },
+        {
+            "id": "Taobin-VM8",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM9",
+            "location": "loc-2",
+            "uptime": "19",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": false,
+            "alerts": {
+                "id": "a-1",
+                "type": "maintenance",
+                "message": "Machine is currently offline"
+              }
+        },
+        {
+            "id": "Taobin-VM10",
+            "location": "loc-1",
+            "uptime": "40",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-0",
+                "type": "None",
+                "message": "Machine is currently working fine"
+              }
+        },
+        {
+            "id": "Taobin-VM11",
+            "location": "loc-1",
+            "uptime": "20",
+            "currentSales": 50,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-001"
+              }
+        },
+        {
+            "id": "Taobin-VM12",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM8",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM9",
+            "location": "loc-2",
+            "uptime": "19",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": false,
+            "alerts": {
+                "id": "a-1",
+                "type": "maintenance",
+                "message": "Machine is currently offline"
+              }
+        },
+        {
+            "id": "Taobin-VM10",
+            "location": "loc-1",
+            "uptime": "40",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-0",
+                "type": "None",
+                "message": "Machine is currently working fine"
+              }
+        },
+        {
+            "id": "Taobin-VM11",
+            "location": "loc-1",
+            "uptime": "20",
+            "currentSales": 50,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-001"
+              }
+        },
+        {
+            "id": "Taobin-VM12",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM8",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
+        },
+        {
+            "id": "Taobin-VM9",
+            "location": "loc-2",
+            "uptime": "19",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": false,
+            "alerts": {
+                "id": "a-1",
+                "type": "maintenance",
+                "message": "Machine is currently offline"
+              }
+        },
+        {
+            "id": "Taobin-VM10",
+            "location": "loc-1",
+            "uptime": "40",
+            "currentSales": 100,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-0",
+                "type": "None",
+                "message": "Machine is currently working fine"
+              }
+        },
+        {
+            "id": "Taobin-VM11",
+            "location": "loc-1",
+            "uptime": "20",
+            "currentSales": 50,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-001"
+              }
+        },
+        {
+            "id": "Taobin-VM12",
+            "location": "loc-2",
+            "uptime": "79",
+            "currentSales": 300,
+            "time": "4-8-2024",
+            "isActive": true,
+            "alerts": {
+                "id": "a-2",
+                "type": "low-inventory",
+                "message": "low inventory on product id: prod-002"
+              }
         }
     ],
     "user": [
         {
-            "id": "1",
-            "name": "Josh Perry",
-            "email": "JoshpmPerry@gmail.com"
+            "userID": "1",
+            "email": "JoshpmPerry@gmail.com",
+            "username": "Josh Perry"
+        }
+    ],
+    "sales": [
+        {
+            "productID": "prod-001",
+            "shortHand": "PM",
+            "productName": "Iced Pink Milk",
+            "machineID": "2",
+            "time": "5-5-2024",
+            "price" : 40
+        },
+        {
+            "productID": "prod-002",
+            "shortHand": "TM",
+            "productName": "Iced Thai Milk Tea",
+            "machineID": "2",
+            "time": "5-5-2024",
+            "price" : 45
+        },
+        {
+            "productID": "prod-001",
+            "shortHand": "PM",
+            "productName": "Iced Pink Milk",
+            "machineID": "2",
+            "time": "5-5-2024",
+            "price" : 40
+        },
+        {
+            "productID": "prod-002",
+            "shortHand": "TM",
+            "productName": "Iced Thai Milk Tea",
+            "machineID": "4",
+            "time": "5-5-2024",
+            "price" : 45
+        },
+        {
+            "productID": "prod-001",
+            "shortHand": "PM",
+            "productName": "Iced Pink Milk",
+            "machineID": "5",
+            "time": "5-5-2024",
+            "price" : 40
+        },
+        {
+            "productID": "prod-001",
+            "shortHand": "PM",
+            "productName": "Iced Pink Milk",
+            "machineID": "10",
+            "time": "5-5-2024",
+            "price" : 40
         }
     ]
 }

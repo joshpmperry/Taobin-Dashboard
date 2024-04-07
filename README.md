@@ -2,10 +2,10 @@
 
 This is a project made by Josh Perry
 
-## Install using taobin.sh
+## Install using script.sh
 
 ```bash
-./taobin.sh
+./script.sh
 ```
 
 
@@ -18,8 +18,6 @@ npm i json-server
 # or
 npm install json-server
 ```
-
->
 
 > To run both the database JSON-Server and Frontend/Backend Next.js server
 
@@ -59,18 +57,22 @@ I personally like a filesystem-based routing in Next.js to keep my project works
 
 ## CSS
 
-In this project I used TailwindCSS instead of MaterialUI which is used at Tao Bin, as its what I am most proficient in.
+In this project I used TailwindCSS instead of MaterialUI which is used at Tao Bin, as its what I am most proficient in currently.
 
 ## Component Library (kind of)
 
-For ease of use I have implemented ShadCN's component library, it is built as seperate customizable-components instead of installing as a dependency allowing me to build the dashboard according to my needs
-
-ShadCN : https://ui.shadcn.com/
+For ease of use I have implemented ShadCN's component library, it is built as seperate customizable-components instead of installing as a dependency allowing me to build the dashboard according to my needs and helps lessen time needed to design components
 
 # Project Overview 
 
-## Key Tasks
+## Key Features
 
-- Machine Status Display : The dashboard view ....(add later)
-- 
-- 
+- Dashboard Display : The dashboard view which compiles all the data from the machines such as revenue, total items sold, current active machines and etc..
+- Machine Status : A page which shows every machine and their details, includes pagination and filters for actives and inactives machine
+- SignIn / SignUp : Currently just a mock signin / signup page that can be accesed using test@taobin.com and any password
+
+## Features Missing
+
+- Proper SignIn/SignUp : As mentioned above it is still currently a mock authentication system
+- Edit / Deletion of Machines : though the buttons are there, they are currently not working
+- Variation in pages : Currently only 2 pages in which displays useful information

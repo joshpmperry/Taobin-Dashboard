@@ -10,11 +10,8 @@ export const metadata: Metadata = {
   description: "Admin Dashboard",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({
+  children,}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <body className='{inter.className} bg-[#F2F2F0]'>

@@ -1,10 +1,11 @@
-'use client';
+'use client'
 
 import {
   File,
   ListFilter,
   PlusCircle,
 } from "lucide-react"
+
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -21,6 +22,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+
 import {
   Table,
   TableBody,
@@ -36,13 +38,16 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 import {
+
   TooltipProvider,
+
 } from "@/components/ui/tooltip"
 
 import { useEffect, useState } from "react"
 import { VendingCard } from "@/components/composite/vending-card"
-import PaginationControl from "@/components/composite/paginationControl"
+
 import { useRouter} from 'next/navigation'
+import PaginationControlInactive from "@/components/composite/paginationControlInactive"
 
 export default function Page({
   searchParams,
@@ -58,7 +63,7 @@ export default function Page({
   const [active, setActive] = useState();
 
   useEffect(()=>{
-    fetch('http://localhost:5050/machine')
+    fetch('http://localhost:5050/machine?isActive=0')
       .then(res => {
         return res.json();
       })
@@ -67,8 +72,9 @@ export default function Page({
         setData(fetchdata);
       })
   }, []);
-  const start = (Number(page) - 1) * Number(per_page)
-  const end = start + Number(per_page)
+
+  const start = (Number(page) - 1) * Number(per_page) 
+  const end = start + Number(per_page) 
 
   const entries = data.slice(start, end)
   return (
@@ -78,7 +84,7 @@ export default function Page({
           <Tabs defaultValue="all">
             <div className="flex items-center">
               <TabsList>
-                <TabsTrigger value="all" >All</TabsTrigger>
+                <TabsTrigger value="all" >Inactive</TabsTrigger>
               </TabsList>
               <div className="ml-auto flex items-center gap-2">
               <DropdownMenu>
@@ -93,11 +99,11 @@ export default function Page({
                   <DropdownMenuContent align="end">
                     <DropdownMenuLabel>Filter by</DropdownMenuLabel>
                     <DropdownMenuSeparator />
+                    <DropdownMenuCheckboxItem onClick={ () => {router.push('/status')} }>
+                      All
+                    </DropdownMenuCheckboxItem>
                     <DropdownMenuCheckboxItem onClick={ () => {router.push('/status/active')} }>
                       Active
-                    </DropdownMenuCheckboxItem>
-                    <DropdownMenuCheckboxItem onClick={ () => {router.push('/status/inactive')} }>
-                      Inactive
                     </DropdownMenuCheckboxItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -153,7 +159,7 @@ export default function Page({
                         ))}
                       </TableBody>
                     </Table>
-                    <PaginationControl hasNextPage={end < data.length} hasPrevPage={start > 0}/>
+                    <PaginationControlInactive hasNextPage={end < data.length} hasPrevPage={start > 0}/>
                   </CardContent>
                 </Card>
               </TabsContent>

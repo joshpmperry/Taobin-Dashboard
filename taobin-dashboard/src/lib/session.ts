@@ -2,8 +2,9 @@ import {SessionOptions} from "iron-session"
 
 export interface SessionData{
     userID?: number;
-    username?:string;
-    isLoggedIn:boolean
+    email?: string;
+    username?: string;
+    isLoggedIn: boolean;
 }
 
 export const sessionOptions: SessionOptions = {
@@ -11,7 +12,7 @@ export const sessionOptions: SessionOptions = {
     cookieName: "taobin-session",
     cookieOptions:{
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production"
+        secure: process.env.NODE_ENV === "development"
     }
 }
 
